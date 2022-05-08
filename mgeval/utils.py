@@ -34,8 +34,10 @@ def c_dist(A, B, mode='None', normalize=0):
             c_dist[i] = np.linalg.norm(A - B[i])
         elif mode == 'EMD':
             if normalize == 1:
-                A_ = sklearn.preprocessing.normalize(A.reshape(1, -1), norm='l1')[0]
-                B_ = sklearn.preprocessing.normalize(B[i].reshape(1, -1), norm='l1')[0]
+                A_ = sklearn.preprocessing.normalize(
+                    A.reshape(1, -1), norm='l1')[0]
+                B_ = sklearn.preprocessing.normalize(
+                    B[i].reshape(1, -1), norm='l1')[0]
             else:
                 A_ = A.reshape(1, -1)[0]
                 B_ = B[i].reshape(1, -1)[0]
@@ -44,8 +46,10 @@ def c_dist(A, B, mode='None', normalize=0):
 
         elif mode == 'KL':
             if normalize == 1:
-                A_ = sklearn.preprocessing.normalize(A.reshape(1, -1), norm='l1')[0]
-                B_ = sklearn.preprocessing.normalize(B[i].reshape(1, -1), norm='l1')[0]
+                A_ = sklearn.preprocessing.normalize(
+                    A.reshape(1, -1), norm='l1')[0]
+                B_ = sklearn.preprocessing.normalize(
+                    B[i].reshape(1, -1), norm='l1')[0]
             else:
                 A_ = A.reshape(1, -1)[0]
                 B_ = B[i].reshape(1, -1)[0]

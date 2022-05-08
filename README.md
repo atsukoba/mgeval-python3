@@ -1,4 +1,6 @@
-# mgeval
+# mgeval (python3 version)
+
+Original repo: [RichardYang40148/mgeval](https://github.com/RichardYang40148/mgeval)
 
 An Objective evaluation toolbox for symbolic domain music generation.
 
@@ -9,6 +11,7 @@ The article is provided as [journal online access](https://link.springer.com/epd
 ## Introduction:
 
 ### Why?
+
 Machine learning and neural networks have demonsrate great potential in music generation. However, vary goals and definition of creativity makes evaluation toward generative music challenging. In recent research, subjective evaluations seem to the only viable way to do this.
 
 The goal of this toolbox is to provide an objective evaluation system to have a better reliability, validity, and replicability in the music generation.
